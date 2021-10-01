@@ -13,9 +13,12 @@
 		70213184270350D200F903A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70213183270350D200F903A5 /* Preview Assets.xcassets */; };
 		702810A72705EE04007AC785 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702810A62705EE04007AC785 /* Rating.swift */; };
 		702810AD2706E9F0007AC785 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702810AC2706E9F0007AC785 /* DoubleExtensions.swift */; };
+		702810B227072B7E007AC785 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 702810B127072B7E007AC785 /* GoogleService-Info.plist */; };
+		DBB72AC588C0F748D1EE2A50 /* Pods_PizzaRatings_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B8C8CC317C7788ACBBF503 /* Pods_PizzaRatings_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17904CD55820D9358FB48D20 /* Pods-PizzaRatings-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaRatings-iOS.debug.xcconfig"; path = "Target Support Files/Pods-PizzaRatings-iOS/Pods-PizzaRatings-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		70213179270350D000F903A5 /* PizzaRatings-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PizzaRatings-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7021317C270350D000F903A5 /* PizzaRatings_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaRatings_iOSApp.swift; sourceTree = "<group>"; };
 		7021317E270350D000F903A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		70213185270350D200F903A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		702810A62705EE04007AC785 /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
 		702810AC2706E9F0007AC785 /* DoubleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
+		702810B127072B7E007AC785 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		79B8C8CC317C7788ACBBF503 /* Pods_PizzaRatings_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PizzaRatings_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F66FD94C30BF8B41DF2163EA /* Pods-PizzaRatings-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaRatings-iOS.release.xcconfig"; path = "Target Support Files/Pods-PizzaRatings-iOS/Pods-PizzaRatings-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBB72AC588C0F748D1EE2A50 /* Pods_PizzaRatings_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				7021317B270350D000F903A5 /* PizzaRatings-iOS */,
 				7021317A270350D000F903A5 /* Products */,
+				FBC0535A68417A4F7EA3777B /* Pods */,
+				8FBDBBDAB2EBEEB5637D9711 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +70,7 @@
 				7021317C270350D000F903A5 /* PizzaRatings_iOSApp.swift */,
 				7021317E270350D000F903A5 /* ContentView.swift */,
 				70213180270350D200F903A5 /* Assets.xcassets */,
+				702810B127072B7E007AC785 /* GoogleService-Info.plist */,
 				70213185270350D200F903A5 /* Info.plist */,
 				70213182270350D200F903A5 /* Preview Content */,
 			);
@@ -107,6 +117,24 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		8FBDBBDAB2EBEEB5637D9711 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79B8C8CC317C7788ACBBF503 /* Pods_PizzaRatings_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBC0535A68417A4F7EA3777B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17904CD55820D9358FB48D20 /* Pods-PizzaRatings-iOS.debug.xcconfig */,
+				F66FD94C30BF8B41DF2163EA /* Pods-PizzaRatings-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70213188270350D200F903A5 /* Build configuration list for PBXNativeTarget "PizzaRatings-iOS" */;
 			buildPhases = (
+				8D0BA61BE4AF507EFE8390A3 /* [CP] Check Pods Manifest.lock */,
 				70213175270350D000F903A5 /* Sources */,
 				70213176270350D000F903A5 /* Frameworks */,
 				70213177270350D000F903A5 /* Resources */,
+				2C37E2BD28AB10BFBE925D24 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,10 +196,53 @@
 			files = (
 				70213184270350D200F903A5 /* Preview Assets.xcassets in Resources */,
 				70213181270350D200F903A5 /* Assets.xcassets in Resources */,
+				702810B227072B7E007AC785 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C37E2BD28AB10BFBE925D24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PizzaRatings-iOS/Pods-PizzaRatings-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PizzaRatings-iOS/Pods-PizzaRatings-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PizzaRatings-iOS/Pods-PizzaRatings-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D0BA61BE4AF507EFE8390A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PizzaRatings-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		70213175270350D000F903A5 /* Sources */ = {
@@ -304,6 +377,7 @@
 		};
 		70213189270350D200F903A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17904CD55820D9358FB48D20 /* Pods-PizzaRatings-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,6 +399,7 @@
 		};
 		7021318A270350D200F903A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F66FD94C30BF8B41DF2163EA /* Pods-PizzaRatings-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
