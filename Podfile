@@ -10,5 +10,6 @@ pod 'Firebase/Crashlytics'
 pod 'Firebase/Analytics'
 pod 'Firebase/Firestore'
 pod 'Firebase/Auth'
+pod 'FirebaseFirestoreSwift', '8.1.0-beta'
 
 end

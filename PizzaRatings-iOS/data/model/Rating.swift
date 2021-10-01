@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import SwiftUI
+import FirebaseFirestoreSwift
 
-struct Rating {
+struct Rating: Identifiable, Codable, Comparable {
+    @DocumentID var id: String? = UUID().uuidString
     let name: String
     let addresses: [String]
     let ratings: [String: Int]
@@ -23,5 +24,16 @@ struct Rating {
     }
     var averageRating: Double {
         Double(sumOfRatings) / Double(numberOfRatings)
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case name
+        case addresses
+        case ratings
+        case logoUrl
+    }
+    
+    static func < (lhs: Rating, rhs: Rating) -> Bool {
+        lhs.averageRating < rhs.averageRating
     }
 }
