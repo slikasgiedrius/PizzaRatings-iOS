@@ -27,10 +27,19 @@ struct ContentView: View {
                 Text("Number of ratings: \(testRating.numberOfRatings)")
                 Text("Addresses: \(testRating.addresses.description)")
                 Text("Ratings: \(testRating.ratings.description)")
+                Button(action: {
+                    
+                }, label: {
+                    Text("Click me")
+                })
                 Spacer()
             }
             Spacer()
         }
+    }
+    
+    func sendRating() {
+        
     }
 }
 

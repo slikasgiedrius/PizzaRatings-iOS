@@ -56,13 +56,13 @@
 		7021317B270350D000F903A5 /* PizzaRatings-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				702810AF2707099E007AC785 /* data */,
 				702810AE27070168007AC785 /* utils */,
 				7021317C270350D000F903A5 /* PizzaRatings_iOSApp.swift */,
 				7021317E270350D000F903A5 /* ContentView.swift */,
 				70213180270350D200F903A5 /* Assets.xcassets */,
 				70213185270350D200F903A5 /* Info.plist */,
 				70213182270350D200F903A5 /* Preview Content */,
-				702810A62705EE04007AC785 /* Rating.swift */,
 			);
 			path = "PizzaRatings-iOS";
 			sourceTree = "<group>";
@@ -89,6 +89,22 @@
 				702810AB2706E9E0007AC785 /* extensions */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		702810AF2707099E007AC785 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				702810B0270709A5007AC785 /* model */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		702810B0270709A5007AC785 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				702810A62705EE04007AC785 /* Rating.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
