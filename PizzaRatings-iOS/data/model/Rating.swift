@@ -25,6 +25,16 @@ struct Rating: Identifiable, Codable, Comparable {
     var averageRating: Double {
         Double(sumOfRatings) / Double(numberOfRatings)
     }
+    var numberOfRatingsText: String {
+        switch numberOfRatings {
+        case 0: return "No ratings"
+        case 1: return "\(numberOfRatings) rating"
+        default: return "\(numberOfRatings) ratings"
+        }
+    }
+    var averageRatingText: String {
+        return "\(averageRating.removeZerosFromEnd()) average rating"
+    }
     
     enum CodingKeys: String, CodingKey {
         case name

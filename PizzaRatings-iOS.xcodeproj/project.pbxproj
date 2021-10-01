@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		7021317D270350D000F903A5 /* PizzaRatings_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7021317C270350D000F903A5 /* PizzaRatings_iOSApp.swift */; };
-		7021317F270350D000F903A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7021317E270350D000F903A5 /* ContentView.swift */; };
+		7021317F270350D000F903A5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7021317E270350D000F903A5 /* HomeView.swift */; };
 		70213181270350D200F903A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70213180270350D200F903A5 /* Assets.xcassets */; };
 		70213184270350D200F903A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70213183270350D200F903A5 /* Preview Assets.xcassets */; };
 		702810A72705EE04007AC785 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702810A62705EE04007AC785 /* Rating.swift */; };
 		702810AD2706E9F0007AC785 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702810AC2706E9F0007AC785 /* DoubleExtensions.swift */; };
 		702810B227072B7E007AC785 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 702810B127072B7E007AC785 /* GoogleService-Info.plist */; };
-		70801E2E27076B1F003A454B /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70801E2D27076B1F003A454B /* DetailsViewModel.swift */; };
+		70801E2E27076B1F003A454B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70801E2D27076B1F003A454B /* HomeViewModel.swift */; };
+		70801E312707903C003A454B /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70801E302707903C003A454B /* DetailsView.swift */; };
+		70801E332707904B003A454B /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70801E322707904B003A454B /* DetailsViewModel.swift */; };
+		70801E36270791DA003A454B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70801E35270791DA003A454B /* ProfileView.swift */; };
+		70801E38270791FE003A454B /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70801E37270791FE003A454B /* ProfileViewModel.swift */; };
+		70801E3B2707924D003A454B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70801E3A2707924D003A454B /* LoginView.swift */; };
+		70801E3D27079262003A454B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70801E3C27079262003A454B /* LoginViewModel.swift */; };
 		DBB72AC588C0F748D1EE2A50 /* Pods_PizzaRatings_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B8C8CC317C7788ACBBF503 /* Pods_PizzaRatings_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,14 +28,20 @@
 		17904CD55820D9358FB48D20 /* Pods-PizzaRatings-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaRatings-iOS.debug.xcconfig"; path = "Target Support Files/Pods-PizzaRatings-iOS/Pods-PizzaRatings-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		70213179270350D000F903A5 /* PizzaRatings-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PizzaRatings-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7021317C270350D000F903A5 /* PizzaRatings_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaRatings_iOSApp.swift; sourceTree = "<group>"; };
-		7021317E270350D000F903A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7021317E270350D000F903A5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		70213180270350D200F903A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70213183270350D200F903A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		70213185270350D200F903A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		702810A62705EE04007AC785 /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
 		702810AC2706E9F0007AC785 /* DoubleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
 		702810B127072B7E007AC785 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		70801E2D27076B1F003A454B /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		70801E2D27076B1F003A454B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		70801E302707903C003A454B /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		70801E322707904B003A454B /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		70801E35270791DA003A454B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		70801E37270791FE003A454B /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		70801E3A2707924D003A454B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		70801E3C27079262003A454B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		79B8C8CC317C7788ACBBF503 /* Pods_PizzaRatings_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PizzaRatings_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66FD94C30BF8B41DF2163EA /* Pods-PizzaRatings-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaRatings-iOS.release.xcconfig"; path = "Target Support Files/Pods-PizzaRatings-iOS/Pods-PizzaRatings-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,18 +134,48 @@
 		70801E2B27076AF6003A454B /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				70801E2C27076B03003A454B /* details */,
+				70801E2C27076B03003A454B /* home */,
+				70801E2F27078FF6003A454B /* details */,
+				70801E34270791CD003A454B /* profile */,
+				70801E3927079241003A454B /* login */,
 			);
 			path = ui;
 			sourceTree = "<group>";
 		};
-		70801E2C27076B03003A454B /* details */ = {
+		70801E2C27076B03003A454B /* home */ = {
 			isa = PBXGroup;
 			children = (
-				7021317E270350D000F903A5 /* ContentView.swift */,
-				70801E2D27076B1F003A454B /* DetailsViewModel.swift */,
+				7021317E270350D000F903A5 /* HomeView.swift */,
+				70801E2D27076B1F003A454B /* HomeViewModel.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		70801E2F27078FF6003A454B /* details */ = {
+			isa = PBXGroup;
+			children = (
+				70801E302707903C003A454B /* DetailsView.swift */,
+				70801E322707904B003A454B /* DetailsViewModel.swift */,
 			);
 			path = details;
+			sourceTree = "<group>";
+		};
+		70801E34270791CD003A454B /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				70801E35270791DA003A454B /* ProfileView.swift */,
+				70801E37270791FE003A454B /* ProfileViewModel.swift */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
+		70801E3927079241003A454B /* login */ = {
+			isa = PBXGroup;
+			children = (
+				70801E3A2707924D003A454B /* LoginView.swift */,
+				70801E3C27079262003A454B /* LoginViewModel.swift */,
+			);
+			path = login;
 			sourceTree = "<group>";
 		};
 		8FBDBBDAB2EBEEB5637D9711 /* Frameworks */ = {
@@ -267,11 +309,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70801E36270791DA003A454B /* ProfileView.swift in Sources */,
 				702810AD2706E9F0007AC785 /* DoubleExtensions.swift in Sources */,
+				70801E3D27079262003A454B /* LoginViewModel.swift in Sources */,
 				702810A72705EE04007AC785 /* Rating.swift in Sources */,
-				70801E2E27076B1F003A454B /* DetailsViewModel.swift in Sources */,
-				7021317F270350D000F903A5 /* ContentView.swift in Sources */,
+				70801E38270791FE003A454B /* ProfileViewModel.swift in Sources */,
+				70801E2E27076B1F003A454B /* HomeViewModel.swift in Sources */,
+				7021317F270350D000F903A5 /* HomeView.swift in Sources */,
+				70801E332707904B003A454B /* DetailsViewModel.swift in Sources */,
 				7021317D270350D000F903A5 /* PizzaRatings_iOSApp.swift in Sources */,
+				70801E3B2707924D003A454B /* LoginView.swift in Sources */,
+				70801E312707903C003A454B /* DetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
