@@ -11,6 +11,8 @@
 		7021317F270350D000F903A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7021317E270350D000F903A5 /* ContentView.swift */; };
 		70213181270350D200F903A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70213180270350D200F903A5 /* Assets.xcassets */; };
 		70213184270350D200F903A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70213183270350D200F903A5 /* Preview Assets.xcassets */; };
+		702810A72705EE04007AC785 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702810A62705EE04007AC785 /* Rating.swift */; };
+		702810AD2706E9F0007AC785 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702810AC2706E9F0007AC785 /* DoubleExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		70213180270350D200F903A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70213183270350D200F903A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		70213185270350D200F903A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		702810A62705EE04007AC785 /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		702810AC2706E9F0007AC785 /* DoubleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +56,13 @@
 		7021317B270350D000F903A5 /* PizzaRatings-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				702810AE27070168007AC785 /* utils */,
 				7021317C270350D000F903A5 /* PizzaRatings_iOSApp.swift */,
 				7021317E270350D000F903A5 /* ContentView.swift */,
 				70213180270350D200F903A5 /* Assets.xcassets */,
 				70213185270350D200F903A5 /* Info.plist */,
 				70213182270350D200F903A5 /* Preview Content */,
+				702810A62705EE04007AC785 /* Rating.swift */,
 			);
 			path = "PizzaRatings-iOS";
 			sourceTree = "<group>";
@@ -67,6 +73,22 @@
 				70213183270350D200F903A5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		702810AB2706E9E0007AC785 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				702810AC2706E9F0007AC785 /* DoubleExtensions.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		702810AE27070168007AC785 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				702810AB2706E9E0007AC785 /* extensions */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +160,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				702810AD2706E9F0007AC785 /* DoubleExtensions.swift in Sources */,
+				702810A72705EE04007AC785 /* Rating.swift in Sources */,
 				7021317F270350D000F903A5 /* ContentView.swift in Sources */,
 				7021317D270350D000F903A5 /* PizzaRatings_iOSApp.swift in Sources */,
 			);
