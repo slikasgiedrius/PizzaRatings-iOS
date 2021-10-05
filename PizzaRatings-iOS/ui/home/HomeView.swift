@@ -14,16 +14,24 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             List(viewModel.pizzeriasListDownloaded) { rating in
-                HStack {
-                    Image(systemName: "earbuds")
+                NavigationLink {
                     VStack(alignment: .leading) {
                         Text(rating.name)
                             .fontWeight(.bold)
                         Text(rating.averageRatingText)
                         Text(rating.numberOfRatingsText)
                     }
+                } label: {
+                    HStack {
+                        Image(systemName: "earbuds")
+                        VStack(alignment: .leading) {
+                            Text(rating.name)
+                                .fontWeight(.bold)
+                            Text(rating.averageRatingText)
+                            Text(rating.numberOfRatingsText)
+                        }
+                    }
                 }
-                
             }
             .navigationTitle("Pizza Ratings")
             .onAppear {
