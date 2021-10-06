@@ -8,7 +8,7 @@
 import Foundation
 import FirebaseFirestoreSwift
 
-struct Rating: Identifiable, Codable, Comparable {
+struct Rating: Identifiable, Codable {
     @DocumentID var id: String? = UUID().uuidString
     let name: String
     let addresses: [String]
@@ -41,9 +41,5 @@ struct Rating: Identifiable, Codable, Comparable {
         case addresses
         case ratings
         case logoUrl
-    }
-    
-    static func < (lhs: Rating, rhs: Rating) -> Bool {
-        lhs.averageRating < rhs.averageRating
     }
 }

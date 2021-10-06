@@ -27,7 +27,18 @@ class HomeViewModel: ObservableObject {
                     return try? queryDocumentSnapshot.data(as: Rating.self)
                 }
                 
-                self.pizzeriasListDownloaded = data.sorted(by: >)
+                //                self.pizzeriasListDownloaded = data.sorted(by: >)
+                
+                let dataSortedByNumberOfRatings = data.sorted {
+                    $0.numberOfRatings > $1.numberOfRatings
+                }
+                
+                let dataSortedByAverageRating = dataSortedByNumberOfRatings.sorted {
+                    $0.averageRating > $1.averageRating
+                }
+                
+                self.pizzeriasListDownloaded = dataSortedByAverageRating
             }
     }
+    
 }
