@@ -21,7 +21,6 @@
 		70801E38270791FE003A454B /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70801E37270791FE003A454B /* ProfileViewModel.swift */; };
 		70801E3B2707924D003A454B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70801E3A2707924D003A454B /* LoginView.swift */; };
 		70801E3D27079262003A454B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70801E3C27079262003A454B /* LoginViewModel.swift */; };
-		7087115A270F22BB002F0482 /* mockedVilnius in Resources */ = {isa = PBXBuildFile; fileRef = 70871159270F22BB002F0482 /* mockedVilnius */; };
 		DBB72AC588C0F748D1EE2A50 /* Pods_PizzaRatings_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B8C8CC317C7788ACBBF503 /* Pods_PizzaRatings_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +42,6 @@
 		70801E37270791FE003A454B /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		70801E3A2707924D003A454B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		70801E3C27079262003A454B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		70871159270F22BB002F0482 /* mockedVilnius */ = {isa = PBXFileReference; lastKnownFileType = text; path = mockedVilnius; sourceTree = "<group>"; };
 		79B8C8CC317C7788ACBBF503 /* Pods_PizzaRatings_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PizzaRatings_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66FD94C30BF8B41DF2163EA /* Pods-PizzaRatings-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaRatings-iOS.release.xcconfig"; path = "Target Support Files/Pods-PizzaRatings-iOS/Pods-PizzaRatings-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,7 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				702810B0270709A5007AC785 /* model */,
-				70871159270F22BB002F0482 /* mockedVilnius */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -259,7 +256,6 @@
 			files = (
 				70213184270350D200F903A5 /* Preview Assets.xcassets in Resources */,
 				70213181270350D200F903A5 /* Assets.xcassets in Resources */,
-				7087115A270F22BB002F0482 /* mockedVilnius in Resources */,
 				702810B227072B7E007AC785 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
