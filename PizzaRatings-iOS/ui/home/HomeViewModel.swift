@@ -27,8 +27,6 @@ class HomeViewModel: ObservableObject {
                     return try? queryDocumentSnapshot.data(as: Rating.self)
                 }
                 
-                //                self.pizzeriasListDownloaded = data.sorted(by: >)
-                
                 let dataSortedByNumberOfRatings = data.sorted {
                     $0.numberOfRatings > $1.numberOfRatings
                 }
@@ -41,4 +39,23 @@ class HomeViewModel: ObservableObject {
             }
     }
     
+    //WIP
+    func getMockedPizzeriasList() {
+        let pathString = Bundle.main.path(forResource: "mockedVilnius", ofType: "json")
+        if let path = pathString {
+            let url = URL(fileURLWithPath: path)
+            do {
+                let data = try Data(contentsOf: url)
+                let decoder = JSONDecoder()
+                do {
+                    let mockedDataList = try decoder.decode([Rating].self, from: data)
+                    pizzeriasListDownloaded = mockedDataList
+                } catch {
+                    print("Error while mapping mocked data to data model")
+                }
+            } catch {
+                print("Error receiving mocked data file")
+            }
+        }
+    }
 }

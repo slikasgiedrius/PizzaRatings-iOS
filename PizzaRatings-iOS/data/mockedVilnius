@@ -1,0 +1,27 @@
+[
+{
+    "name": "Dodo Pizza",
+    "addresses": ["Antakalnio g. 41", "Ozo g. 18"],
+    "ratings": {
+        "92bMFbKkwtZu5MXjiWmJnMvzKM33": 4
+    },
+    "logoUrl": "https://drive.google.com/thumbnail?id=1jgJb_Ev4QeAbYTv-q2lnbXW7SieLAqNq"
+},
+{
+    "name": "Pizza & Nachos Pub",
+    "addresses": ["Linkmenų g. 4, Vilnius 09300"],
+    "ratings": {
+        "KVzvzHPhgoZE2T3hH7yLz6pyNol2": 5
+    },
+    "logoUrl": "https://drive.google.com/thumbnail?id=1ndsXH-CCxzyXeF2Gzd_IaobFxmbzud0x"
+ },
+ {
+    "name": "Pizza Verde",
+    "addresses": ["Kalvarijų g.101a", "Smetonos g.5"],
+    "ratings": {
+        "KVzvzHPhgoZE2T3hH7yLz6pyNol2": 5,
+        "92bMFbKkwtZu5MXjiWmJnMvzKM33": 3
+    },
+    "logoUrl": "https://drive.google.com/thumbnail?id=1nDNFnHe8Or1OxJQeKiP2l0ietn8QXS02"
+ }
+]
