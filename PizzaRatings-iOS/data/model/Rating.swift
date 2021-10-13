@@ -8,7 +8,7 @@
 import Foundation
 import FirebaseFirestoreSwift
 
-class Rating: Identifiable, Codable {
+struct Rating: Identifiable, Codable {
     @DocumentID var id: String? = UUID().uuidString
     let name: String
     let addresses: [String]

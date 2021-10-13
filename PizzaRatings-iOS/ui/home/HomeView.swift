@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  PizzaRatings-iOS
 //
 //  Created by Giedrius on 2021-09-28.
@@ -14,24 +14,20 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             List(viewModel.pizzeriasListDownloaded) { rating in
-                NavigationLink {
-                    VStack(alignment: .leading) {
-                        Text(rating.name)
-                            .fontWeight(.bold)
-                        Text(rating.averageRatingText)
-                        Text(rating.numberOfRatingsText)
-                    }
-                } label: {
-                    HStack {
-                        Image(systemName: "earbuds")
-                        VStack(alignment: .leading) {
-                            Text(rating.name)
-                                .fontWeight(.bold)
-                            Text(rating.averageRatingText)
-                            Text(rating.numberOfRatingsText)
+                NavigationLink(
+                    destination: DetailsView(rating: rating),
+                    label: {
+                        HStack {
+                            Image(systemName: "earbuds")
+                            VStack(alignment: .leading) {
+                                Text(rating.name)
+                                    .fontWeight(.bold)
+                                Text(rating.averageRatingText)
+                                Text(rating.numberOfRatingsText)
+                            }
                         }
                     }
-                }
+                )
             }
             .navigationTitle("Pizza Ratings")
             .onAppear {

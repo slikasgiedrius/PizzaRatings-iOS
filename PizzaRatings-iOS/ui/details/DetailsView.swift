@@ -11,13 +11,21 @@ struct DetailsView: View {
     
     @ObservedObject var viewmodel = DetailsViewModel()
     
+    var rating: Rating
+    
     var body: some View {
-        Text("Details screen")
+        ScrollView {
+            Text(rating.name)
+            Text(rating.addresses.description)
+            Text(rating.ratings.description)
+            Text(rating.logoUrl)
+            Text("Number of ratings: \(rating.numberOfRatings)")
+        }.navigationTitle(rating.name)
     }
 }
 
 struct DetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailsView()
+        DetailsView(rating: getMockerRating())
     }
 }
