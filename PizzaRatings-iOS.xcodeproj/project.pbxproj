@@ -16,6 +16,9 @@
 		702810B227072B7E007AC785 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 702810B127072B7E007AC785 /* GoogleService-Info.plist */; };
 		705782632710747B00CDC2A8 /* PizzaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705782622710747B00CDC2A8 /* PizzaRepository.swift */; };
 		705782662717732B00CDC2A8 /* RatingMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705782652717732B00CDC2A8 /* RatingMocks.swift */; };
+		70578268271AD6B900CDC2A8 /* BottomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70578267271AD6B900CDC2A8 /* BottomNavigationView.swift */; };
+		7057826B271AD7EE00CDC2A8 /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7057826A271AD7EE00CDC2A8 /* FavouritesView.swift */; };
+		7057826D271AD81300CDC2A8 /* FavouritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7057826C271AD81300CDC2A8 /* FavouritesViewModel.swift */; };
 		70801E2E27076B1F003A454B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70801E2D27076B1F003A454B /* HomeViewModel.swift */; };
 		70801E312707903C003A454B /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70801E302707903C003A454B /* DetailsView.swift */; };
 		70801E332707904B003A454B /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70801E322707904B003A454B /* DetailsViewModel.swift */; };
@@ -39,6 +42,9 @@
 		702810B127072B7E007AC785 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		705782622710747B00CDC2A8 /* PizzaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaRepository.swift; sourceTree = "<group>"; };
 		705782652717732B00CDC2A8 /* RatingMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingMocks.swift; sourceTree = "<group>"; };
+		70578267271AD6B900CDC2A8 /* BottomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationView.swift; sourceTree = "<group>"; };
+		7057826A271AD7EE00CDC2A8 /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
+		7057826C271AD81300CDC2A8 /* FavouritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewModel.swift; sourceTree = "<group>"; };
 		70801E2D27076B1F003A454B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		70801E302707903C003A454B /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		70801E322707904B003A454B /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
@@ -91,6 +97,7 @@
 				702810B127072B7E007AC785 /* GoogleService-Info.plist */,
 				70213185270350D200F903A5 /* Info.plist */,
 				70213182270350D200F903A5 /* Preview Content */,
+				70578267271AD6B900CDC2A8 /* BottomNavigationView.swift */,
 			);
 			path = "PizzaRatings-iOS";
 			sourceTree = "<group>";
@@ -153,9 +160,19 @@
 			path = mocks;
 			sourceTree = "<group>";
 		};
+		70578269271AD7D600CDC2A8 /* favourites */ = {
+			isa = PBXGroup;
+			children = (
+				7057826A271AD7EE00CDC2A8 /* FavouritesView.swift */,
+				7057826C271AD81300CDC2A8 /* FavouritesViewModel.swift */,
+			);
+			path = favourites;
+			sourceTree = "<group>";
+		};
 		70801E2B27076AF6003A454B /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				70578269271AD7D600CDC2A8 /* favourites */,
 				70801E2C27076B03003A454B /* home */,
 				70801E2F27078FF6003A454B /* details */,
 				70801E34270791CD003A454B /* profile */,
@@ -339,10 +356,13 @@
 				705782662717732B00CDC2A8 /* RatingMocks.swift in Sources */,
 				70801E38270791FE003A454B /* ProfileViewModel.swift in Sources */,
 				70801E2E27076B1F003A454B /* HomeViewModel.swift in Sources */,
+				7057826D271AD81300CDC2A8 /* FavouritesViewModel.swift in Sources */,
 				7021317F270350D000F903A5 /* HomeView.swift in Sources */,
+				70578268271AD6B900CDC2A8 /* BottomNavigationView.swift in Sources */,
 				70801E332707904B003A454B /* DetailsViewModel.swift in Sources */,
 				7021317D270350D000F903A5 /* PizzaRatings_iOSApp.swift in Sources */,
 				70801E3B2707924D003A454B /* LoginView.swift in Sources */,
+				7057826B271AD7EE00CDC2A8 /* FavouritesView.swift in Sources */,
 				70801E312707903C003A454B /* DetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
