@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProfileView: View {
-    
+    @EnvironmentObject var homeViewModel: HomeViewModel
     @ObservedObject var viewmodel = ProfileViewModel()
     
     var body: some View {

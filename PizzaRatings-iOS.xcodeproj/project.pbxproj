@@ -97,7 +97,6 @@
 				702810B127072B7E007AC785 /* GoogleService-Info.plist */,
 				70213185270350D200F903A5 /* Info.plist */,
 				70213182270350D200F903A5 /* Preview Content */,
-				70578267271AD6B900CDC2A8 /* BottomNavigationView.swift */,
 			);
 			path = "PizzaRatings-iOS";
 			sourceTree = "<group>";
@@ -121,6 +120,7 @@
 		702810AE27070168007AC785 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				70578267271AD6B900CDC2A8 /* BottomNavigationView.swift */,
 				705782642717731900CDC2A8 /* mocks */,
 				702810AB2706E9E0007AC785 /* extensions */,
 			);

@@ -15,12 +15,11 @@ struct DetailsView: View {
     
     var body: some View {
         ScrollView {
-            Text(rating.name)
             Text(rating.addresses.description)
             Text(rating.ratings.description)
             Text(rating.logoUrl)
             Text("Number of ratings: \(rating.numberOfRatings)")
-        }.navigationTitle(rating.name)
+        }.navigationBarTitle(rating.name, displayMode: .inline)
     }
 }
 

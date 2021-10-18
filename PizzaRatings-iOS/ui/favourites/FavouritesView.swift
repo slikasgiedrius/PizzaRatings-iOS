@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct FavouritesView: View {
+    @EnvironmentObject var homeViewModel: HomeViewModel
     @ObservedObject var viewmodel = FavouritesViewModel()
     
     var body: some View {
