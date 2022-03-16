@@ -9,9 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     
-//    @ObservedObject var viewModel = HomeViewModel()
-    
-    @EnvironmentObject var viewModel: HomeViewModel
+    @ObservedObject var viewModel = HomeViewModel()
     
     var body: some View {
         NavigationView {

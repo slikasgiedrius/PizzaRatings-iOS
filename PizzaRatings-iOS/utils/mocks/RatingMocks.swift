@@ -7,7 +7,7 @@
 
 import Foundation
 
-func getMockerRating() -> Rating {
+func getMockedRating() -> Rating {
     return Rating(
         name: "Dodo Pizza",
         addresses: ["Antakalnio g. 41", "Ozo g. 18"],
