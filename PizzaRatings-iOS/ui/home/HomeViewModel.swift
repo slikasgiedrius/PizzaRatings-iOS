@@ -16,10 +16,11 @@ class HomeViewModel: ObservableObject {
     
     func getPizzeriasList() {
         Firestore.firestore()
-            .collection("Vilnius")
+            .collection(Constants.Cities.vilnius)
             .addSnapshotListener { (querySnapshot, error) in
                 guard let documents = querySnapshot?.documents else {
-                    print("No documents found for collection named Vilnius")
+                    print("No documents found for collection named \(Constants.Cities.vilnius)"
+                    )
                     return
                 }
                 
