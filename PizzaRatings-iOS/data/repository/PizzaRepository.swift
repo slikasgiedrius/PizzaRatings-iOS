@@ -1,8 +1,8 @@
 //
-//  DetailsViewModel.swift
+//  PizzaRepository.swift
 //  PizzaRatings-iOS
 //
-//  Created by Giedrius on 2021-10-01.
+//  Created by Giedrius on 2021-10-08.
 //
 
 import Foundation
@@ -10,17 +10,15 @@ import Firebase
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 
-class HomeViewModel: ObservableObject {
-    
-    @Published var pizzeriasListDownloaded = [Rating]()
+struct PizzaRepository {
+    var viewModel: HomeViewModel
     
     func getPizzeriasList() {
         Firestore.firestore()
             .collection(Constants.Cities.vilnius)
             .addSnapshotListener { (querySnapshot, error) in
                 guard let documents = querySnapshot?.documents else {
-                    print("No documents found for collection named \(Constants.Cities.vilnius)"
-                    )
+                    print("No documents found for collection named Vilnius")
                     return
                 }
                 
@@ -36,7 +34,7 @@ class HomeViewModel: ObservableObject {
                     $0.averageRating > $1.averageRating
                 }
                 
-                self.pizzeriasListDownloaded = dataSortedByAverageRating
+                viewModel.pizzeriasListDownloaded = dataSortedByAverageRating
             }
     }
 }

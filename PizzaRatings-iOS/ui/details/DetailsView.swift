@@ -10,14 +10,15 @@ import SwiftUI
 struct DetailsView: View {
     
     @ObservedObject var viewmodel = DetailsViewModel()
+    var rating: Rating
     
     var body: some View {
-        Text("Details screen")
+        DetailsContent(rating: rating)
     }
 }
 
 struct DetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailsView()
+        DetailsView(rating: getMockedRating())
     }
 }

@@ -17,7 +17,8 @@ struct PizzaRatings_iOSApp: App {
     
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            BottomNavigationView()
+                .environmentObject(HomeViewModel())
         }
     }
 }
