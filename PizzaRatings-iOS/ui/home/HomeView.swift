@@ -18,7 +18,7 @@ struct HomeView: View {
                 NavigationLink(
                     destination: DetailsView(rating: rating),
                     label: {
-                        HStack {
+                        HStak {
                             KFImage(URL(string: rating.logoUrl))
                                 .resizable()
                                 .frame(width: 80, height: 80)
