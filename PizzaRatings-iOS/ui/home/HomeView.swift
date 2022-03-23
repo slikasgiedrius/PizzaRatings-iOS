@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct HomeView: View {
     
@@ -18,7 +19,10 @@ struct HomeView: View {
                     destination: DetailsView(rating: rating),
                     label: {
                         HStack {
-                            Image(systemName: "earbuds")
+                            KFImage(URL(string: rating.logoUrl))
+                                .resizable()
+                                .frame(width: 80, height: 80)
+                                .padding(4)
                             VStack(alignment: .leading) {
                                 Text(rating.name)
                                     .fontWeight(.bold)
