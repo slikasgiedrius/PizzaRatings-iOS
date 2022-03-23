@@ -13,4 +13,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build the app
-        run: xcodebuild -project PizzaRatings-iOS.xcworkspace -scheme PizzaRatings-iOS -destination 'generic/platform=iOS' -configuration Release build CODE_SIGNING_ALLOWED=NO
+        run: xcodebuild -project PizzaRatings-iOS.xcodeproj -scheme PizzaRatings-iOS -destination 'generic/platform=iOS' -configuration Release build CODE_SIGNING_ALLOWED=NO
