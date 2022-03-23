@@ -17,7 +17,4 @@ jobs:
         with:
           project: PizzaRatings-iOS.xcodeproj
           scheme: PizzaRatings-iOS
-          destination: platform=macOS
           action: build
-        
-        
