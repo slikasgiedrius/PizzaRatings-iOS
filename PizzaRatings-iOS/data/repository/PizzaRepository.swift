@@ -10,15 +10,15 @@ import Firebase
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 
-struct PizzaRepository {
-    var viewModel: HomeViewModel
+class PizzaRepository {
     
-    func getPizzeriasList() {
+    func getPizzeriasList(completion: @escaping ([Rating]) -> Void) {
         Firestore.firestore()
             .collection(Constants.Cities.vilnius)
             .addSnapshotListener { (querySnapshot, error) in
                 guard let documents = querySnapshot?.documents else {
-                    print("No documents found for collection named Vilnius")
+                    print("No documents found for collection named \(Constants.Cities.vilnius)"
+                    )
                     return
                 }
                 
@@ -34,7 +34,7 @@ struct PizzaRepository {
                     $0.averageRating > $1.averageRating
                 }
                 
-                viewModel.pizzeriasListDownloaded = dataSortedByAverageRating
+                completion(dataSortedByAverageRating)
             }
     }
 }
