@@ -17,4 +17,5 @@ jobs:
         with:
           project: PizzaRatings-iOS.xcodeproj
           scheme: PizzaRatings-iOS
+          allow-provisioning-updates: true
           action: build
