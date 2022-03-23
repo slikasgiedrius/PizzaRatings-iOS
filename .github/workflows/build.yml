@@ -13,9 +13,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build the app
-        uses: sersoft-gmbh/xcodebuild-action@v1
-        with:
-          project: PizzaRatings-iOS.xcodeproj
-          scheme: PizzaRatings-iOS
-          allow-provisioning-updates: true
+        uses: mxcl/xcodebuild@v1
+        with: 
           action: build
