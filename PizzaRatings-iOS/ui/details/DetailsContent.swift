@@ -35,3 +35,10 @@ struct DetailsContent: View {
         .navigationBarTitle(rating.name, displayMode: .inline)
     }
 }
+
+struct DetailsContent_Previews: PreviewProvider {
+    static var previews: some View {
+        DetailsContent(rating: getMockedRating())
+    }
+}
+

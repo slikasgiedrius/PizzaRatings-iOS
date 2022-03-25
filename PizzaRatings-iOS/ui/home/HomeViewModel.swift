@@ -13,10 +13,10 @@ import FirebaseFirestoreSwift
 class HomeViewModel: ObservableObject {
     
     @Published var pizzeriasListDownloaded = [Rating]()
-    let repo = PizzaRepository()
+    let pizzaRepository = PizzaRepository()
     
     func getPizzeriasList() {
-        repo.getPizzeriasList {[weak self] in
+        pizzaRepository.getPizzeriasList {[weak self] in
             self?.pizzeriasListDownloaded = $0
         }
     }

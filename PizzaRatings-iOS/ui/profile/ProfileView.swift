@@ -12,12 +12,6 @@ struct ProfileView: View {
     @ObservedObject var viewmodel = ProfileViewModel()
     
     var body: some View {
-        Text("Profile screen")
-    }
-}
-
-struct ProfileView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileView()
+        ProfileContent()
     }
 }
