@@ -14,10 +14,10 @@ class PizzaRepository {
     
     func getPizzeriasList(completion: @escaping ([Rating]) -> Void) {
         Firestore.firestore()
-            .collection(Constants.Cities.vilnius)
+            .collection(Constants.Databases.restaurants)
             .addSnapshotListener { (querySnapshot, error) in
                 guard let documents = querySnapshot?.documents else {
-                    print("No documents found for collection named \(Constants.Cities.vilnius)"
+                    print("No documents found for collection named \(Constants.Databases.restaurants)"
                     )
                     return
                 }
