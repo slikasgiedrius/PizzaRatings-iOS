@@ -14,6 +14,10 @@
 		6B1F205227EDDB8600345F9F /* FavouritesContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1F205127EDDB8600345F9F /* FavouritesContent.swift */; };
 		6B1F205427EDDD2200345F9F /* ProfileContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1F205327EDDD2200345F9F /* ProfileContent.swift */; };
 		6B1F205627EDDD6F00345F9F /* LoginContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1F205527EDDD6F00345F9F /* LoginContent.swift */; };
+		6B496686280430D5007DA15A /* Ratings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B496685280430D5007DA15A /* Ratings.swift */; };
+		6B49668828043283007DA15A /* AverageRatingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B49668728043283007DA15A /* AverageRatingCell.swift */; };
+		6B49668A2804396D007DA15A /* NumberOfRatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4966892804396D007DA15A /* NumberOfRatings.swift */; };
+		6B49668C28043AE1007DA15A /* PizzeriaName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B49668B28043AE1007DA15A /* PizzeriaName.swift */; };
 		6B66793627E1FB290007CA7A /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B66793527E1FB290007CA7A /* ArrayExtensions.swift */; };
 		6B66793827E1FD300007CA7A /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B66793727E1FD300007CA7A /* DictionaryExtensions.swift */; };
 		7021317D270350D000F903A5 /* PizzaRatings_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7021317C270350D000F903A5 /* PizzaRatings_iOSApp.swift */; };
@@ -47,6 +51,10 @@
 		6B1F205127EDDB8600345F9F /* FavouritesContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesContent.swift; sourceTree = "<group>"; };
 		6B1F205327EDDD2200345F9F /* ProfileContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileContent.swift; sourceTree = "<group>"; };
 		6B1F205527EDDD6F00345F9F /* LoginContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContent.swift; sourceTree = "<group>"; };
+		6B496685280430D5007DA15A /* Ratings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ratings.swift; sourceTree = "<group>"; };
+		6B49668728043283007DA15A /* AverageRatingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageRatingCell.swift; sourceTree = "<group>"; };
+		6B4966892804396D007DA15A /* NumberOfRatings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfRatings.swift; sourceTree = "<group>"; };
+		6B49668B28043AE1007DA15A /* PizzeriaName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzeriaName.swift; sourceTree = "<group>"; };
 		6B66793527E1FB290007CA7A /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		6B66793727E1FD300007CA7A /* DictionaryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
 		70213179270350D000F903A5 /* PizzaRatings-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PizzaRatings-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				6B1A0731280071CB000376D2 /* Addresses.swift */,
+				6B496685280430D5007DA15A /* Ratings.swift */,
+				6B49668728043283007DA15A /* AverageRatingCell.swift */,
+				6B4966892804396D007DA15A /* NumberOfRatings.swift */,
+				6B49668B28043AE1007DA15A /* PizzeriaName.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -396,6 +408,7 @@
 				705782632710747B00CDC2A8 /* PizzaRepository.swift in Sources */,
 				6B1F205427EDDD2200345F9F /* ProfileContent.swift in Sources */,
 				70801E3D27079262003A454B /* LoginViewModel.swift in Sources */,
+				6B49668C28043AE1007DA15A /* PizzeriaName.swift in Sources */,
 				6B1A0732280071CB000376D2 /* Addresses.swift in Sources */,
 				702810A72705EE04007AC785 /* Rating.swift in Sources */,
 				705782662717732B00CDC2A8 /* RatingMocks.swift in Sources */,
@@ -403,10 +416,13 @@
 				6B1F205227EDDB8600345F9F /* FavouritesContent.swift in Sources */,
 				70801E2E27076B1F003A454B /* HomeViewModel.swift in Sources */,
 				6B1F205627EDDD6F00345F9F /* LoginContent.swift in Sources */,
+				6B496686280430D5007DA15A /* Ratings.swift in Sources */,
 				7057826D271AD81300CDC2A8 /* FavouritesViewModel.swift in Sources */,
+				6B49668828043283007DA15A /* AverageRatingCell.swift in Sources */,
 				7021317F270350D000F903A5 /* HomeView.swift in Sources */,
 				6B0A219B27E4BB0C00F291C4 /* Constants.swift in Sources */,
 				6B0A219527E47DA900F291C4 /* DetailsContent.swift in Sources */,
+				6B49668A2804396D007DA15A /* NumberOfRatings.swift in Sources */,
 				70578268271AD6B900CDC2A8 /* BottomNavigationView.swift in Sources */,
 				6B66793827E1FD300007CA7A /* DictionaryExtensions.swift in Sources */,
 				70801E332707904B003A454B /* DetailsViewModel.swift in Sources */,

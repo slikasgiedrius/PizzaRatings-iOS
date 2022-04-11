@@ -23,10 +23,9 @@ struct HomeContent: View {
                             .frame(width: 80, height: 80)
                             .padding(4)
                         VStack(alignment: .leading) {
-                            Text(rating.name)
-                                .fontWeight(.bold)
-                            Text(rating.averageRatingText)
-                            Text(rating.numberOfRatingsText)
+                            PizzeriaName(pizzeriaName: rating.name)
+                            AverageRatingCell(isFromHomeScreen: true, averageRating: rating.averageRating)
+                            NumberOfRatings(numberOfRatings: rating.numberOfRatings)
                         }
                     }
                 }

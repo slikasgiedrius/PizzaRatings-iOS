@@ -22,14 +22,11 @@ struct DetailsContent: View {
                     .padding(4)
                 Spacer()
             }
-            Text("Pizzeria selected: \(rating.name)")
-            Text("Average rating: \(rating.averageRating.removeZerosFromEnd())")
-            Text("Number of ratings: \(rating.numberOfRatings)")
+            PizzeriaName(pizzeriaName: rating.name)
+            AverageRatingCell(averageRating: rating.averageRating)
+            NumberOfRatings(numberOfRatings: rating.numberOfRatings)
             Addresses(addresses: rating.addresses)
-            if rating.ratings != nil {
-                Text("Ratings: \(rating.ratings!.toString())")
-            }
-           
+            Ratings(ratings: rating.ratings)
             Text("My user id: N/A")
             Text("My rating is: N/A")
             Spacer()

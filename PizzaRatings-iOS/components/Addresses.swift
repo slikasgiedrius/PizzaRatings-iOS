@@ -14,6 +14,8 @@ struct Addresses: View {
     var body: some View {
         if addresses != nil {
             Text("Addresses: \(addresses!.toString())")
+        } else {
+            Text("Address list is not ready")
         }
     }
 }
