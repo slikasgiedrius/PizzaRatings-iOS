@@ -17,8 +17,7 @@ class PizzaRepository {
             .collection(Constants.Databases.restaurants)
             .addSnapshotListener { (querySnapshot, error) in
                 guard let documents = querySnapshot?.documents else {
-                    print("No documents found for collection named \(Constants.Databases.restaurants)"
-                    )
+                    print("No documents found for collection named \(Constants.Databases.restaurants)")
                     return
                 }
                 
