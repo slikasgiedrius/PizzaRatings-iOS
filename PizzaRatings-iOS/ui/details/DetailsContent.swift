@@ -28,9 +28,9 @@ struct DetailsContent: View {
             Addresses(addresses: rating.addresses)
             Ratings(ratings: rating.ratings)
             Text("My user id: N/A")
-                .font(.custom(Fonts.Avenir.regular, size: Dimens.TextSize.regular))
+                .font(.regular())
             Text("My rating is: N/A")
-                .font(.custom(Fonts.Avenir.regular, size: Dimens.TextSize.regular))
+                .font(.regular())
             Spacer()
             RatingPicker(
                 confirmRatingAction: ratingSelected

@@ -23,6 +23,7 @@
 		6B71E3DE282CEDBD00FD043D /* RatingPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B71E3DD282CEDBD00FD043D /* RatingPicker.swift */; };
 		6B84655A282D321600F021EA /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B846559282D321600F021EA /* Fonts.swift */; };
 		6B84655C282D333900F021EA /* Dimens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B84655B282D333900F021EA /* Dimens.swift */; };
+		6B84655E282D350000F021EA /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B84655D282D350000F021EA /* FontExtensions.swift */; };
 		7021317D270350D000F903A5 /* PizzaRatings_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7021317C270350D000F903A5 /* PizzaRatings_iOSApp.swift */; };
 		7021317F270350D000F903A5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7021317E270350D000F903A5 /* HomeView.swift */; };
 		70213181270350D200F903A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70213180270350D200F903A5 /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		6B71E3DD282CEDBD00FD043D /* RatingPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingPicker.swift; sourceTree = "<group>"; };
 		6B846559282D321600F021EA /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		6B84655B282D333900F021EA /* Dimens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimens.swift; sourceTree = "<group>"; };
+		6B84655D282D350000F021EA /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
 		70213179270350D000F903A5 /* PizzaRatings-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PizzaRatings-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7021317C270350D000F903A5 /* PizzaRatings_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaRatings_iOSApp.swift; sourceTree = "<group>"; };
 		7021317E270350D000F903A5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				702810AC2706E9F0007AC785 /* DoubleExtensions.swift */,
 				6B66793527E1FB290007CA7A /* ArrayExtensions.swift */,
 				6B66793727E1FD300007CA7A /* DictionaryExtensions.swift */,
+				6B84655D282D350000F021EA /* FontExtensions.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				6B1F205627EDDD6F00345F9F /* LoginContent.swift in Sources */,
 				6B496686280430D5007DA15A /* Ratings.swift in Sources */,
 				7057826D271AD81300CDC2A8 /* FavouritesViewModel.swift in Sources */,
+				6B84655E282D350000F021EA /* FontExtensions.swift in Sources */,
 				6B49668828043283007DA15A /* AverageRatingCell.swift in Sources */,
 				7021317F270350D000F903A5 /* HomeView.swift in Sources */,
 				6B0A219B27E4BB0C00F291C4 /* Constants.swift in Sources */,

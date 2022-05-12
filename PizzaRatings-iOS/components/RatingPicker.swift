@@ -26,7 +26,7 @@ struct RatingPicker: View {
             .padding([.leading, .trailing], 20)
             
             Button(action: { confirmRatingAction(selectedRating) }){
-                Text("Log").font(.custom(Fonts.Avenir.regular, size: Dimens.TextSize.regular))
+                Text("Log").font(.regular())
             }
         }
     }
