@@ -8,6 +8,9 @@
 import Foundation
 
 struct Constants {
+    struct Databases {
+        static let restaurants = "Restaurants"
+    }
     
     struct Cities {
         static let vilnius = "Vilnius"

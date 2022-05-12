@@ -11,29 +11,19 @@ import FirebaseFirestoreSwift
 struct Rating: Identifiable, Codable {
     @DocumentID var id: String? = UUID().uuidString
     let name: String
-    let addresses: [String]
-    let ratings: [String: Int]
+    let addresses: [String]?
+    let ratings: [String: Int]?
     let logoUrl: String
     var numberOfRatings: Int {
-        ratings.count
+        ratings?.count ?? 0
     }
     var sumOfRatings: Int {
-        ratings.reduce(0, { partialResult, rating in
+        ratings?.reduce(0, { partialResult, rating in
             partialResult + rating.value
-        })
+        }) ?? 0
     }
     var averageRating: Double {
         Double(sumOfRatings) / Double(numberOfRatings)
-    }
-    var numberOfRatingsText: String {
-        switch numberOfRatings {
-        case 0: return "No ratings"
-        case 1: return "\(numberOfRatings) rating"
-        default: return "\(numberOfRatings) ratings"
-        }
-    }
-    var averageRatingText: String {
-        return "\(averageRating.removeZerosFromEnd()) average rating"
     }
     
     enum CodingKeys: String, CodingKey {

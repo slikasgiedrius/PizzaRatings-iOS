@@ -12,12 +12,6 @@ struct FavouritesView: View {
     @ObservedObject var viewmodel = FavouritesViewModel()
     
     var body: some View {
-        Text("Favourites screen")
-    }
-}
-
-struct FavouritesView_Previews: PreviewProvider {
-    static var previews: some View {
-        FavouritesView()
+        FavouritesContent()
     }
 }

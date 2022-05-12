@@ -9,7 +9,7 @@ import Foundation
 
 class Company {
     let id: Int = 0
-    let publicName: String = ""
+    let name: String = ""
     let addresses: [String] = []
     let logoUrl: String = ""
     let products: [String] = []

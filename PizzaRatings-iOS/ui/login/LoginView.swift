@@ -12,12 +12,6 @@ struct LoginView: View {
     @ObservedObject var viewmodel = LoginViewModel()
     
     var body: some View {
-        Text("Login screen")
-    }
-}
-
-struct LoginView_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginView()
+        LoginContent()
     }
 }

@@ -7,17 +7,26 @@
 
 import Foundation
 import SwiftUI
+import Kingfisher
 
 struct DetailsContent: View {
     var rating: Rating
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Pizzeria selected: \(rating.name)")
-            Text("Average rating: \(rating.averageRating.removeZerosFromEnd())")
-            Text("Number of ratings: \(rating.numberOfRatings)")
-            Text("Addresses: \(rating.addresses.toString())")
-            Text("Ratings: \(rating.ratings.toString())")
+            HStack {
+                Spacer()
+                KFImage(URL(string: rating.logoUrl))
+                    .resizable()
+                    .frame(width: 100, height: 100)
+                    .padding(4)
+                Spacer()
+            }
+            PizzeriaName(pizzeriaName: rating.name)
+            AverageRatingCell(averageRating: rating.averageRating)
+            NumberOfRatings(numberOfRatings: rating.numberOfRatings)
+            Addresses(addresses: rating.addresses)
+            Ratings(ratings: rating.ratings)
             Text("My user id: N/A")
             Text("My rating is: N/A")
             Spacer()
@@ -26,3 +35,10 @@ struct DetailsContent: View {
         .navigationBarTitle(rating.name, displayMode: .inline)
     }
 }
+
+struct DetailsContent_Previews: PreviewProvider {
+    static var previews: some View {
+        DetailsContent(rating: getMockedRating())
+    }
+}
+
