@@ -30,6 +30,7 @@ struct DetailsContent: View {
             Text("My user id: N/A")
             Text("My rating is: N/A")
             Spacer()
+            RatingPicker()
         }
         .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         .navigationBarTitle(rating.name, displayMode: .inline)
