@@ -30,11 +30,17 @@ struct DetailsContent: View {
             Text("My user id: N/A")
             Text("My rating is: N/A")
             Spacer()
-            RatingPicker()
+            RatingPicker(
+                ratingConfirmed: ratingSelected
+            )
         }
         .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         .navigationBarTitle(rating.name, displayMode: .inline)
     }
+}
+
+func ratingSelected(selectedRating: Int) {
+    print("action selected is \(selectedRating)")
 }
 
 struct DetailsContent_Previews: PreviewProvider {
@@ -42,4 +48,3 @@ struct DetailsContent_Previews: PreviewProvider {
         DetailsContent(rating: getMockedRating())
     }
 }
-
