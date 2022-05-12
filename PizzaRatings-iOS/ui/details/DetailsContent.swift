@@ -31,7 +31,7 @@ struct DetailsContent: View {
             Text("My rating is: N/A")
             Spacer()
             RatingPicker(
-                ratingConfirmed: ratingSelected
+                confirmRatingAction: ratingSelected
             )
         }
         .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
@@ -40,7 +40,7 @@ struct DetailsContent: View {
 }
 
 func ratingSelected(selectedRating: Int) {
-    print("action selected is \(selectedRating)")
+    print("Selected rating is \(selectedRating)")
 }
 
 struct DetailsContent_Previews: PreviewProvider {

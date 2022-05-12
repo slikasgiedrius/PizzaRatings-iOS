@@ -11,7 +11,7 @@ import SwiftUI
 struct RatingPicker: View {
     
     @State var selectedRating = 5
-    var ratingConfirmed: (Int) -> Void
+    var confirmRatingAction: (Int) -> Void
     
     var body: some View {
         VStack {
@@ -25,10 +25,7 @@ struct RatingPicker: View {
             .pickerStyle(SegmentedPickerStyle())
             .padding([.leading, .trailing], 20)
             
-            Text("You have selected: \(selectedRating)")
-            Text("Ratings not working YET")
-            
-            Button(action: { ratingConfirmed(selectedRating) }){
+            Button(action: { confirmRatingAction(selectedRating) }){
                 Text("Log")
             }
         }
@@ -38,7 +35,7 @@ struct RatingPicker: View {
 struct RatingPicker_Previews: PreviewProvider {
     static var previews: some View {
         RatingPicker(
-            ratingConfirmed: { print($0) }
+            confirmRatingAction: { print($0) }
         )
     }
 }
