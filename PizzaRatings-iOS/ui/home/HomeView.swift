@@ -10,7 +10,7 @@ import Kingfisher
 
 struct HomeView: View {
     
-    @ObservedObject var viewModel = HomeViewModel()
+    @EnvironmentObject var viewModel: HomeViewModel
     
     var body: some View {
         NavigationView {
