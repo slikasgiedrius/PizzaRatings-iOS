@@ -26,7 +26,17 @@ struct RatingPicker: View {
             .padding([.leading, .trailing], 20)
             
             Button(action: { confirmRatingAction(selectedRating) }){
-                Text("Log").font(.regular())
+                ZStack {
+                    Rectangle()
+                        .frame(height: 48)
+                        .foregroundColor(Color.green)
+                        .cornerRadius(10)
+                        .shadow(radius: 5)
+                    
+                    Text("Log")
+                        .foregroundColor(Color.white)
+                        .font(.bold())
+                }.padding()
             }
         }
     }

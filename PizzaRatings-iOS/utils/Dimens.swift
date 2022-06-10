@@ -12,4 +12,8 @@ struct Dimens {
         static let regular = 17.0
         static let bold = 20.0
     }
+    
+    struct Padding {
+        static let small = 4.0
+    }
 }

@@ -21,7 +21,8 @@ struct HomeContent: View {
                         KFImage(URL(string: rating.logoUrl))
                             .resizable()
                             .frame(width: 80, height: 80)
-                            .padding(4)
+                            .padding(Dimens.Padding.small)
+                           
                         VStack(alignment: .leading) {
                             PizzeriaName(pizzeriaName: rating.name)
                             AverageRatingCell(

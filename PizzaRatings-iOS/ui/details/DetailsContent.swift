@@ -19,7 +19,7 @@ struct DetailsContent: View {
                 KFImage(URL(string: rating.logoUrl))
                     .resizable()
                     .frame(width: 100, height: 100)
-                    .padding(4)
+                    .padding(Dimens.Padding.small)
                 Spacer()
             }
             PizzeriaName(pizzeriaName: rating.name)
@@ -32,9 +32,7 @@ struct DetailsContent: View {
             Text("My rating is: N/A")
                 .font(.regular())
             Spacer()
-            RatingPicker(
-                confirmRatingAction: ratingSelected
-            )
+            RatingPicker(confirmRatingAction: ratingSelected)
         }
         .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         .navigationBarTitle(rating.name, displayMode: .inline)
