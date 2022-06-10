@@ -16,11 +16,11 @@ struct RatingPicker: View {
     var body: some View {
         VStack {
             Picker("Click me", selection: $selectedRating) {
-                Text("1").tag(1)
-                Text("2").tag(2)
-                Text("3").tag(3)
-                Text("4").tag(4)
-                Text("5").tag(5)
+                Text("1").font(.regular()).tag(1)
+                Text("2").font(.regular()).tag(2)
+                Text("3").font(.regular()).tag(3)
+                Text("4").font(.regular()).tag(4)
+                Text("5").font(.regular()).tag(5)
             }
             .pickerStyle(SegmentedPickerStyle())
             .padding([.leading, .trailing], 20)

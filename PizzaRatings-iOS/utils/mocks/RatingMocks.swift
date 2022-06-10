@@ -15,3 +15,7 @@ func getMockedRating() -> Rating {
         logoUrl: "https://drive.google.com/thumbnail?id=1jgJb_Ev4QeAbYTv-q2lnbXW7SieLAqNq"
     )
 }
+
+func getMockedListOfRatings() -> [Rating] {
+    return [getMockedRating()]
+}

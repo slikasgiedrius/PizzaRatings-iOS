@@ -29,6 +29,7 @@ struct HomeScreenAverageRatingCell: View {
             //Do nothing (remove the Text)
         } else {
             Text("\(averageRating.removeZerosFromEnd()) average rating")
+                .font(.regular())
         }
     }
 }
@@ -39,8 +40,22 @@ struct DetailsScreenAverageRatingCell: View {
     var body: some View {
         if averageRating == 0.0 || averageRating.isNaN {
             Text("There is no average rating")
+                .font(.regular())
         } else {
             Text("\(averageRating.removeZerosFromEnd()) average rating")
+                .font(.regular())
         }
+    }
+}
+
+struct HomeScreenAverageRatingCell_Preview: PreviewProvider {
+    static var previews: some View {
+        HomeScreenAverageRatingCell(averageRating: 4.59)
+    }
+}
+
+struct DetailsScreenAverageRatingCell_Preview: PreviewProvider {
+    static var previews: some View {
+        DetailsScreenAverageRatingCell(averageRating: 0.01)
     }
 }

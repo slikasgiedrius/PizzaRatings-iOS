@@ -13,6 +13,7 @@ struct NumberOfRatings: View {
     
     var body: some View {
         Text(convertToText(numberOfRatings))
+            .font(.regular())
     }
     
     func convertToText(_ numberOfRatings: Int) -> String {
@@ -21,5 +22,11 @@ struct NumberOfRatings: View {
         case 1: return "\(numberOfRatings) rating"
         default: return "\(numberOfRatings) ratings"
         }
+    }
+}
+
+struct NumberOfRatings_Preview: PreviewProvider {
+    static var previews: some View {
+        NumberOfRatings(numberOfRatings: 5)
     }
 }

@@ -10,5 +10,6 @@ import Foundation
 struct Dimens {
     struct TextSize {
         static let regular = 17.0
+        static let bold = 20.0
     }
 }

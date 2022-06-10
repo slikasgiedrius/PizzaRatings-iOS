@@ -12,4 +12,8 @@ extension Font {
     static func regular() -> Font {
         return .custom(Fonts.Avenir.regular, size: Dimens.TextSize.regular)
     }
+    
+    static func bold() -> Font {
+        return .custom(Fonts.Avenir.bold, size: Dimens.TextSize.bold)
+    }
 }

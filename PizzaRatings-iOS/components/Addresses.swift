@@ -14,8 +14,16 @@ struct Addresses: View {
     var body: some View {
         if addresses != nil {
             Text("Addresses: \(addresses!.toString())")
+                .font(.regular())
         } else {
             Text("Address list is not ready")
+                .font(.regular())
         }
+    }
+}
+
+struct Addresses_Preview: PreviewProvider {
+    static var previews: some View {
+        Addresses(addresses: getMockedRating().addresses)
     }
 }

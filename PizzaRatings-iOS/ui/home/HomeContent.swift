@@ -24,12 +24,21 @@ struct HomeContent: View {
                             .padding(4)
                         VStack(alignment: .leading) {
                             PizzeriaName(pizzeriaName: rating.name)
-                            AverageRatingCell(isFromHomeScreen: true, averageRating: rating.averageRating)
+                            AverageRatingCell(
+                                isFromHomeScreen: true,
+                                averageRating: rating.averageRating
+                            )
                             NumberOfRatings(numberOfRatings: rating.numberOfRatings)
                         }
                     }
                 }
             )
         }
+    }
+}
+
+struct HomeContent_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeContent(ratings: getMockedListOfRatings())
     }
 }

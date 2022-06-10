@@ -12,6 +12,13 @@ struct PizzeriaName: View {
     var pizzeriaName: String
     
     var body: some View {
-        Text(pizzeriaName).fontWeight(.bold)
+        Text(pizzeriaName)
+            .font(.bold())
+    }
+}
+
+struct Previews_PizzeriaName_Previews: PreviewProvider {
+    static var previews: some View {
+        PizzeriaName(pizzeriaName: "Test pizza")
     }
 }

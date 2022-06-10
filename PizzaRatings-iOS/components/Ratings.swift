@@ -14,8 +14,16 @@ struct Ratings: View {
     var body: some View {
         if ratings != nil {
             Text("Ratings: \(ratings!.toString())")
+                .font(.regular())
         } else {
             Text("No ratings yet")
+                .font(.regular())
         }
+    }
+}
+
+struct Ratings_Preview: PreviewProvider {
+    static var previews: some View {
+        Ratings(ratings: getMockedRating().ratings)
     }
 }
