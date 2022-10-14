@@ -11,6 +11,7 @@ import SwiftUI
 struct FavouritesContent: View {
     var body: some View {
         Text("Favourites screen")
+            .font(.regular())
     }
 }
 

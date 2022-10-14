@@ -11,6 +11,7 @@ import SwiftUI
 struct ProfileContent: View {
     var body: some View {
         Text("Profile screen")
+            .font(.regular())
     }
 }
 

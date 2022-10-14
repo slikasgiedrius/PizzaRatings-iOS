@@ -11,6 +11,7 @@ import SwiftUI
 struct LoginContent: View {
     var body: some View {
         Text("Login screen")
+            .font(.regular())
     }
 }
 
