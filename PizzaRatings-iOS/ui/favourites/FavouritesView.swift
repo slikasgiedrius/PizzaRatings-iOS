@@ -15,3 +15,10 @@ struct FavouritesView: View {
         FavouritesContent()
     }
 }
+
+struct FavouritesView_Previews: PreviewProvider {
+    static var previews: some View {
+        FavouritesView()
+            .environmentObject(FavouritesViewModel())
+    }
+}

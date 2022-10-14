@@ -15,3 +15,10 @@ struct ProfileView: View {
         ProfileContent()
     }
 }
+
+struct ProfileView_Previews: PreviewProvider {
+    static var previews: some View {
+        ProfileView()
+            .environmentObject(ProfileViewModel())
+    }
+}

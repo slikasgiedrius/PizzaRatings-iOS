@@ -15,3 +15,10 @@ struct LoginView: View {
         LoginContent()
     }
 }
+
+struct LoginView_Previews: PreviewProvider {
+    static var previews: some View {
+        LoginView()
+            .environmentObject(LoginViewModel())
+    }
+}

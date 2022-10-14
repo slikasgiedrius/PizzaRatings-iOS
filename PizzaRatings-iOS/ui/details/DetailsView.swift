@@ -15,3 +15,10 @@ struct DetailsView: View {
         DetailsContent(rating: rating)
     }
 }
+
+struct DetailsView_Previews: PreviewProvider {
+    static var previews: some View {
+        DetailsView(rating: getMockedRating())
+            .environmentObject(DetailsViewModel())
+    }
+}
