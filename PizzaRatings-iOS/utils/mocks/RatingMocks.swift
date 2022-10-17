@@ -12,7 +12,8 @@ func getMockedRating() -> Rating {
         name: "Dodo Pizza",
         addresses: ["Antakalnio g. 41", "Ozo g. 18"],
         ratings: ["92bMFbKkwtZu5MXjiWmJnMvzKM33": 4],
-        logoUrl: "https://drive.google.com/thumbnail?id=1jgJb_Ev4QeAbYTv-q2lnbXW7SieLAqNq"
+        logoUrl: "https://drive.google.com/thumbnail?id=1jgJb_Ev4QeAbYTv-q2lnbXW7SieLAqNq",
+        favourited: ["92bMFbKkwtZu5MXjiWmJnMvzKM33"]
     )
 }
 

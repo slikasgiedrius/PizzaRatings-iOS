@@ -11,4 +11,8 @@ extension Array {
     func toString() -> String {
         return "\(self)"
     }
+    
+    func isNotEmpty() -> Bool {
+        return !self.isEmpty
+    }
 }

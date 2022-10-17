@@ -14,6 +14,9 @@ struct Rating: Identifiable, Codable {
     let addresses: [String]?
     let ratings: [String: Int]?
     let logoUrl: String
+    let favourited: [String]?
+    
+    //Additional variables (not from the response)
     var numberOfRatings: Int {
         ratings?.count ?? 0
     }
@@ -31,5 +34,6 @@ struct Rating: Identifiable, Codable {
         case addresses
         case ratings
         case logoUrl
+        case favourited
     }
 }
