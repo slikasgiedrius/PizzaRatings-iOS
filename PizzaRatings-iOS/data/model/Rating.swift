@@ -6,10 +6,10 @@
 //
 
 import Foundation
-import FirebaseFirestoreSwift
 
 struct Rating: Identifiable, Codable {
-    @DocumentID var id: String? = UUID().uuidString
+//    @DocumentID var id: String? = UUID().uuidString
+    var id: String? = UUID().uuidString
     let name: String
     let addresses: [String]?
     let ratings: [String: Int]?
