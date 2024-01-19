@@ -13,6 +13,7 @@ extension Double {
         let number = NSNumber(value: self)
         formatter.minimumFractionDigits = 1
         formatter.maximumFractionDigits = 16
+        formatter.decimalSeparator = "."
         return String(formatter.string(from: number) ?? "")
     }
 }
