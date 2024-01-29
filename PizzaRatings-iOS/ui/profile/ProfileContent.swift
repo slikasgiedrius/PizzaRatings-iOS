@@ -10,8 +10,17 @@ import SwiftUI
 
 struct ProfileContent: View {
     var body: some View {
-        Text("Profile screen")
-            .font(.regular())
+        
+        ZStack {
+            VStack {
+                Text("Profile screen")
+                    .font(.regular())
+                
+                Button("Login") {
+                    print("Login button is presses on Profile screen")
+                }
+            }
+        }
     }
 }
 
